@@ -1,5 +1,8 @@
 node{
 stage('scm checkout'){
-git 
+git 'https://github.com/srini787/microservicetmobile.git'
+}
+  stage('mvn build'){
+sh 'mvn package'
 }
 }
